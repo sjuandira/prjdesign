@@ -290,7 +290,7 @@ section {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  height: 90px;
+  height: 120px;
   background-color: var(--color-primary);
 }
 
@@ -302,10 +302,13 @@ section {
   height: 70px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
-
+.header .logo{
+  color: var(--color-default);
+}
 .header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
 }
 
 .header .logo h1 {
@@ -383,7 +386,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-default);
+    background-color: var(--color-primary);
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -428,7 +431,7 @@ section {
     font-size: 15px;
     text-transform: none;
     font-weight: 600;
-    color: #006a5d;
+    color: var(--color-primary);
   }
 
   .navbar .dropdown ul a i {
@@ -438,7 +441,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-secondary);
+    color: var(--color-default);
   }
 
   .navbar .dropdown:hover>ul {
@@ -499,7 +502,7 @@ section {
     inset: 0;
     padding: 50px 0 10px 0;
     margin: 0;
-    background: rgba(0, 131, 116, 0.9);
+    background: var(--color-default);
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -530,7 +533,7 @@ section {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: var(--color-primary);
   }
 
   .navbar .getstarted,
@@ -556,6 +559,7 @@ section {
     margin: 10px 20px;
     transition: all 0.5s ease-in-out;
     background-color: #007466;
+    border-radius: 5px;
     border: 1px solid #006459;
   }
 
@@ -978,6 +982,7 @@ section {
   z-index: 2;
   position: relative;
 }
+
 .services .service-item .icon:before {
   position: absolute;
   content: "";
@@ -1009,7 +1014,6 @@ section {
   margin-bottom: 0;
   color: var(--color-primary)
 }
-
 .services .service-item .readmore {
   margin-top: 15px;
   display: inline-block;
@@ -1023,6 +1027,7 @@ section {
 .services .service-item:hover h3 {
   border-color: var(--color-primary);
 }
+
 
 /*--------------------------------------------------------------
 # Testimonials Section
@@ -1737,7 +1742,7 @@ section {
   width: 100%;
   position: relative;
   background: var(--color-primary);
-  padding: 35px 0 0 0;
+  padding: 50px 0 0 0;
 }
 .hero img{
   margin-top: 0px;
