@@ -973,7 +973,11 @@ section {
   z-index: 2;
   position: relative;
 }
-
+.services .service-item .icon img {
+  transition: ease-in-out 0.3s;
+  z-index: 2;
+  position: relative;
+}
 .services .service-item .icon:before {
   position: absolute;
   content: "";
