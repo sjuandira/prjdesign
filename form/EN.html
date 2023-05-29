@@ -5,12 +5,15 @@
     <link href="img/_Logo.png" rel="icon" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up | PRJ x HT XI</title>
+    <title>Daftar EN | PRJ x HT XI</title>
     <meta
-      content="Daftarkan dirimu PRJ x HT XI Ignite : Unleashing the Spark of Youth Potential"
+      content="Daftar Essay Nasional PRJ x HT XI Ignite : Unleashing the Spark of Youth Potential"
       name="description"
     />
-    <meta content="PRJxHT, PRJxHT 11, Daftar, Sign Up" name="keywords" />
+    <meta
+      content="PRJxHT, PRJxHT 11, Daftar, EN, Essay Nasional"
+      name="keywords"
+    />
 
     <link rel="stylesheet" href="css/form.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -26,8 +29,8 @@
     <div class="row">
       <div class="col-0 col-md-3"></div>
       <div class="col-12 col-md-6 mx-auto">
-        <form action="signUpAction" method="post">
-          <h1>Pendaftaran Akun Peserta</h1>
+        <form action="enAction" method="post">
+          <h1>Daftar Essay Nasional</h1>
 
           <fieldset class="mb-3">
             <legend><span class="number">1</span> Profil</legend>
@@ -38,17 +41,31 @@
             <label for="name">Nama Lengkap</label>
             <input required type="text" id="name" name="name" />
 
-            <label for="telpon">No.Telpon</label>
-            <input required type="number" id="telp" name="telp" />
+            <label for="telp">No.Telpon</label>
+            <input required type="text" id="telp" name="telp" />
 
             <label for="school">Instansi</label>
             <input required type="text" id="school" name="school" />
 
-            <label for="password">Password</label>
-            <input required type="password" id="pass" name="pass" />
+            <label for="birth">Tanggal lahir</label>
+            <input required type="date" id="birth" name="birth" />
+
+            <label for="gambar">
+              Bukti Identitas (Kartu Pelajar / Halaman Depan Rapot)
+            </label>
+            <div class="input-group">
+              <input
+                required
+                type="file"
+                class="form-control mb-3"
+                id="gambar"
+                name="gambar"
+                accept="image/x-png,image/gif,image/jpeg"
+              />
+            </div>
           </fieldset>
 
-          <button class="btn-buat" type="submit">Buat Akun</button>
+          <button class="btn-buat" type="submit">Daftar</button>
         </form>
       </div>
       <div class="col-0 col-md-3"></div>
